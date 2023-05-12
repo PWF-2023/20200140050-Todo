@@ -26,6 +26,17 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
+        User::create(
+            [
+                'name' => 'Andi Muhamad Fachreza',
+                'email' => 'fachrezandi123@gmail.com',
+                'email_verified_at' => now(),
+                'password' => '$2a$12$X6xoQ1wG.Is68BTbBFUklOHaktxbfPL7DI3ou/fm/PjvZQbT8q006',
+                'remember_token' =>Str::random(10),
+                'is_admin' => false
+            ]
+        );
+
         User::factory(100)->create();
         Todo::factory(500)->create();
 
