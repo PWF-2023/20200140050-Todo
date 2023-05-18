@@ -53,7 +53,7 @@ class TodoController extends Controller
         // ]);
 
         // Eloqvent way - Shortest
-        $request->user()->todos()->create($request->all());
+        $request->user()->todo()->create($request->all());
         // $request->user()->todos()->create([
         //     'title' => ucfirst($request->title),
         // ]);
